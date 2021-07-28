@@ -1,0 +1,13 @@
+<br>
+<div *ngFor="let team of teams" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>TEAM {{ team.name }}</h1>
+            <small>({{ team.members.length }} MEMBERS)</small>
+        </div>
+    </div>
+    <mat-list>
+        <app-team-member *ngFor="let minion of team.members" [minion]="minion" [teamId]="team.id"></app-team-member>
+    </mat-list>
+    <hr>
+</div>

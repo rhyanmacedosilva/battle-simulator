@@ -1,0 +1,50 @@
+<div class="row" *ngIf="loading == true">
+    <div class="col-md-12">
+        <div class="spinner-container">
+            <mat-spinner [diameter]="30"></mat-spinner>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-12 content-center">
+        <h1>{{ title }}</h1>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>DESCRIPTION</mat-label>
+            <input [disabled]="loading" #minionName matInput [value]="minion.id != -1 ? minion.name : ''">
+        </mat-form-field>
+    </div>
+    <div class="col-md-4">
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>LEVEL</mat-label>
+            <input [disabled]="loading" #minionLevel matInput [value]="minion.id != -1 ? minion.level : ''">
+        </mat-form-field>
+    </div>
+    <div class="col-md-4">
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>TEAM</mat-label>
+            <mat-select [disabled]="loading" [value]="minion.id != -1 ? minion.teamId : ''" #minionTeam>
+                <mat-option *ngFor="let teamOption of teamOptions" [value]="teamOption.id">
+                    {{ teamOption.name }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-12 content-center">
+        <button [disabled]="loading" (click)="onSave(minionName, minionLevel, minionTeam)" type="button"
+            class="btn btn-danger btn-block">
+            SAVE
+        </button>
+        <button [disabled]="loading" (click)="onCancel()" type="button"
+            class="btn btn-outline-danger btn-block">CANCEL</button>
+    </div>
+</div>
+<br>

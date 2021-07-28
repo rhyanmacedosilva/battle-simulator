@@ -1,0 +1,14 @@
+<mat-list-item>
+    <div style="margin-bottom: 7px;" matLine>
+        <span class="battle-names">
+            <span [ngClass]="{ 'dashed': strongerMinion == 'B' }">{{ minionA.name }}</span>
+            X
+            <span [ngClass]="{ 'dashed': strongerMinion == 'A' }">{{ minionB.name }}</span>
+        </span>
+        <span class="span-progress-bar">
+            <div matLine>
+                <mat-progress-bar mode="determinate" [value]="battleProgress"></mat-progress-bar>
+            </div>
+        </span>
+    </div>
+</mat-list-item>

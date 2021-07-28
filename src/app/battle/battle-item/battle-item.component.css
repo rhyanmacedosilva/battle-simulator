@@ -1,0 +1,16 @@
+.dashed {
+    text-decoration: line-through;
+    opacity: 0.2;
+}
+
+.span-progress-bar {
+    margin-top: 14px;
+}
+
+.battle-names {
+    text-align: center;
+}
+
+.battle-names, .span-progress-bar {
+    display: block;
+}

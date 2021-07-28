@@ -1,0 +1,31 @@
+<br>
+<div *ngIf="starting == true">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="margin: auto; width: fit-content;">
+                    <mat-spinner [diameter]="30"></mat-spinner>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;">
+                <h1>LOADING</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="starting == false" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <mat-list>
+                <app-battle-item *ngFor="let teamMember of teams[0].members; let i = index" [minionA]="teamMember"
+                    [minionB]="teams[1].members[i]">
+                </app-battle-item>
+            </mat-list>
+        </div>
+    </div>
+</div>

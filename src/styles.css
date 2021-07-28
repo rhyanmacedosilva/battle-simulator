@@ -1,0 +1,35 @@
+html, body, app-root, .app-frame {
+    overflow: auto;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    color: #e0e0e0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.btn {
+    margin-right: 7px;
+    border-radius: 0px;
+    width: 30%;
+}
+
+input {
+    text-transform: uppercase;
+}
+
+mat-list-option, mat-list-item, mat-label, h1, input, small, .btn {
+    letter-spacing: 4px !important;
+}
+
+.content-center {
+    text-align: center;
+}
+
+.spinner-container {
+    margin: auto;
+    width: fit-content;
+}

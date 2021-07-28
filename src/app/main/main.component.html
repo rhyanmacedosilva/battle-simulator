@@ -1,0 +1,14 @@
+<div class="mat-typography app-frame mat-app-background">
+    <mat-tab-group [(selectedIndex)]="activeTabIndex" (selectedTabChange)="onTabChange()" animationDuration="0ms"
+        mat-align-tabs="center">
+        <mat-tab label="M I N I O N S">
+            <app-minions></app-minions>
+        </mat-tab>
+        <mat-tab label="T E A M S">
+            <app-teams></app-teams>
+        </mat-tab>
+        <mat-tab label="B A T T L E">
+            <app-battle></app-battle>
+        </mat-tab>
+    </mat-tab-group>
+</div>
