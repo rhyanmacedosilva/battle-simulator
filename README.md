@@ -9,8 +9,7 @@ A ideia aqui foi criar uma aplicação onde o usuário pode cadastrar alguns "mi
 
 A ideia foi aplicar alguns conceitos do framework:
 
-* Comunicação entre componentes
-* CRUD de dados dentro da aplicação
+* Comunicar dados entre componentes
 * Routing
 * Input do usuário
 
