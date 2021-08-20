@@ -15,9 +15,16 @@ A ideia foi aplicar alguns conceitos do framework:
 * Input do usuário
 
 ## Quer dar uma conferida no resultado?
+
 Clique [aqui](https://battle-simulator-386ae.web.app/) para acessar a aplicação hospedada no Firebase.
 
 ## Executando o projeto em ambiente de desenvolvimento
 
 Lembre-se de instalar as dependências do projeto com o comando `npm-install`.
 Execute o comando `ng serve` para fazer o start do servidor. Navegue até o endereço `http://localhost:4200/`. O app recarregará toda vez que você salvar uma alteração no código.
+
+## Tecnologias
+
+* Angular
+* Angular Material
+* Firebase (hosting)
