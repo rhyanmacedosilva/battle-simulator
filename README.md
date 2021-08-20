@@ -1,4 +1,4 @@
-# BattleSimulator - Projeto desenvolvido com o frameword Angular
+# BattleSimulator - Angular
 
 Projeto criado por meio do [Angular CLI](https://github.com/angular/angular-cli) v 12.1.1.
 Todo o desenvolvimento foi realizado como meio de exercitar os conhecimentos iniciais adquiridos durante a realização do curso [Angular - The Complete Guide (2021 Edition).](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
