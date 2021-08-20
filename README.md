@@ -1,27 +1,23 @@
-# BattleSimulator
+# BattleSimulator - Projeto desenvolvido com o frameword Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+Projeto criado por meio do [Angular CLI](https://github.com/angular/angular-cli) v 12.1.1.
+Todo o desenvolvimento foi realizado como meio de exercitar os conhecimentos iniciais adquiridos durante a realização do curso [Angular - The Complete Guide (2021 Edition).](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
 
-## Development server
+## O Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A ideia aqui foi criar uma aplicação onde o usuário pode cadastrar alguns "minions" determinando um nível de habilidade, nome e a qual time este minion pertence (A ou B). Feito isso o usuário pode então organizar os times conforme desejar para então dar início a uma "batalha" onde o primeiro minion do time A vai enfrentar o primeiro minion do time B, o segundo minion do time A vai enfrentar o segundo minion do time B, e assim por diante.
 
-## Code scaffolding
+A ideia foi aplicar alguns conceitos do framework:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Comunicação entre componentes
+* CRUD de dados dentro da aplicação
+* Routing
+* Input do usuário
 
-## Build
+## Quer dar uma conferida no resultado?
+Clique [aqui](https://battle-simulator-386ae.web.app/) para acessar a aplicação hospedada no Firebase.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Executando o projeto em ambiente de desenvolvimento
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Lembre-se de instalar as dependências do projeto com o comando `npm-install`.
+Execute o comando `ng serve` para fazer o start do servidor. Navegue até o endereço `http://localhost:4200/`. O app recarregará toda vez que você salvar uma alteração no código.
